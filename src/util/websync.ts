@@ -8,8 +8,7 @@ import { IS_TAURI } from './browser/globalEnvironment';
 import { hasStoredSession } from './sessions';
 
 const WEBSYNC_URLS = [
-  'behappy.rest',
-  'telegram.me',
+  'ansible.rest',
 ].map((domain) => `https://${domain}/_websync_?`);
 const WEBSYNC_VERSION = `${APP_VERSION} ${APP_CODE_NAME}`;
 const WEBSYNC_KEY = 'tgme_sync';

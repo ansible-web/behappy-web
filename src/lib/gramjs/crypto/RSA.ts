@@ -8,9 +8,10 @@ import {
 
 export const SERVER_KEYS = [
   // MVSy (BeHappy) server RSA key — DC1 (silent-friend, K8s)
-  // Fingerprint computed from /opt/behappy/bh-mvsy/priv/rsa_private.pem
+  // fingerprint: hardcoded ID announced by backend in ResPq (NOT sha1-derived)
+  // n: actual modulus of server's current /opt/behappy/bh-mvsy/priv/rsa_private.pem
   {
-    fingerprint: BigInt('-2463690031186951546'),
+    fingerprint: BigInt('523366621625352527'),
     n: BigInt(
       '2406444647177473533718412530532565171056955000799371943015212831775198794964341567090757464159725464'
       + '4570949454582164784781819746236520067864814622874059297587362232177993133013418248288406965473281306'

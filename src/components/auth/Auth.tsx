@@ -88,14 +88,20 @@ const Auth = ({
   }
 
   return (
-    <Transition
-      activeKey={getActiveKey()}
-      name="fade"
+    <div
       className="Auth"
       data-tauri-drag-region={IS_TAURI && IS_MAC_OS ? true : undefined}
     >
-      {getScreen()}
-    </Transition>
+      <div className="auth-card">
+        <Transition
+          activeKey={getActiveKey()}
+          name="fade"
+          className="auth-transition"
+        >
+          {getScreen()}
+        </Transition>
+      </div>
+    </div>
   );
 };
 

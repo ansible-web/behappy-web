@@ -34,8 +34,8 @@ type StateProps = {
 };
 
 const DATA_PREFIX = 'bh://login?token=';
-const QR_SIZE = 280;
-const QR_PLANE_SIZE = 54;
+const QR_SIZE = 220;
+const QR_PLANE_SIZE = 44;
 const QR_CODE_MUTATION_DURATION = 50; // The library is asynchronous and we need to wait for its mutation code
 
 let qrCodeStylingPromise: Promise<typeof import('qr-code-styling')> | undefined;
@@ -193,13 +193,13 @@ const AuthCode = ({
           {!isQrMounted && <div className="qr-loading"><Loading /></div>}
         </div>
         <h1>{lang('LoginQRTitle')}</h1>
-        <ol>
-          <li><span>{lang('LoginQRHelp1')}</span></li>
-          <li><span>{lang('LoginQRHelp2', undefined, { withNodes: true, withMarkdown: true })}</span></li>
-          <li><span>{lang('LoginQRHelp3')}</span></li>
-        </ol>
+        <div className="qr-note">
+          <p>{lang('LoginQRHelp1')}</p>
+          <p>{lang('LoginQRHelp2', undefined, { withNodes: true, withMarkdown: true })}</p>
+          <p>{lang('LoginQRHelp3')}</p>
+        </div>
         {isAuthReady && (
-          <Button className="auth-button" isText onClick={handleReturnToAuthPhoneNumber}>
+          <Button className="auth-button" color="primary" ripple onClick={handleReturnToAuthPhoneNumber}>
             {lang('LoginQRCancel')}
           </Button>
         )}

@@ -33,7 +33,7 @@
     "test:record": "playwright codegen localhost:1235",
     "statoscope:validate-diff": "statoscope validate --input input.json --reference reference.json",
     "postinstall": "node -e \"require('fs').rmSync('.cache', { recursive: true, force: true })\"",
-    "postversion": "echo $(node -p \"require('./package.json').version\") > public/version.txt && git commit --amend --no-verify --no-edit public/version.txt"
+    "postversion": "node -e \"require('fs').writeFileSync('public/version.txt', require('./package.json').version + '\\n')\" && git commit --amend --no-verify --no-edit public/version.txt"
   },
   "engines": {
     "node": "^22.6 || ^24",

@@ -24,7 +24,7 @@
 
   width: 100%;
   max-width: 30rem;
-  min-height: 30rem;
+  height: 36rem;
 
   background: var(--color-background);
   border: 1px solid var(--color-borders);
@@ -33,7 +33,7 @@
 
   @media (max-width: 600px) {
     max-width: none;
-    min-height: 100%;
+    height: 100%;
     border: none;
     border-radius: 0;
     box-shadow: none;
@@ -42,11 +42,7 @@
 
 .auth-transition {
   position: relative;
-  min-height: 30rem;
-
-  @media (max-width: 600px) {
-    min-height: 100%;
-  }
+  height: 100%;
 }
 
 #auth-registration-form,
@@ -125,7 +121,7 @@
 
 #auth-phone-number-form {
   .form {
-    min-height: 18rem;
+    min-height: 15rem;
   }
 }
 

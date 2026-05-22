@@ -15,7 +15,11 @@
     var(--color-background-secondary);
 
   @media (max-width: 600px) {
-    padding: 0;
+    padding:
+      max(1rem, env(safe-area-inset-top))
+      max(1rem, env(safe-area-inset-right))
+      max(1rem, env(safe-area-inset-bottom))
+      max(1rem, env(safe-area-inset-left));
   }
 }
 
@@ -30,14 +34,6 @@
   border: 1px solid var(--color-borders);
   border-radius: 1rem;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
-
-  @media (max-width: 600px) {
-    max-width: none;
-    height: 100%;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-  }
 }
 
 .auth-transition {

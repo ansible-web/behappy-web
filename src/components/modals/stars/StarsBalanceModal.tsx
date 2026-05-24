@@ -194,8 +194,8 @@ const StarsBalanceModal = ({
     return (
       <>
         <ParticlesHeader
-          model="swaying-star"
-          color="gold"
+          model="speeding-diamond"
+          color="blue"
           title={starsNeeded ? oldLang('StarsNeededTitle', ongoingTransactionAmount) : oldLang('TelegramStars')}
           description={renderText(
             starsNeededText || oldLang('TelegramStarsInfo'),

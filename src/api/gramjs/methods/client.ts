@@ -105,8 +105,8 @@ export async function init(initialArgs: ApiInitialArgs, onConnected?: NoneToVoid
 
   client = new TelegramClient(
     session,
-    Number(process.env.BEHAPPY_API_ID),
-    process.env.BEHAPPY_API_HASH,
+    Number(process.env.ANSIBLE_API_ID),
+    process.env.ANSIBLE_API_HASH,
     {
       deviceModel: navigator.userAgent || userAgent || DEFAULT_USER_AGENT,
       systemVersion: platform || DEFAULT_PLATFORM,

@@ -1,6 +1,6 @@
-**BeHappy Digest**
+**Ansible Digest**
 
-Welcome to BeHappy! Here is a brief overview of what's available.
+Welcome to Ansible! Here is a brief overview of what's available.
 
 ✏️ __General__
 • Modern UI with focus on speed and security.

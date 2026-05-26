@@ -196,7 +196,7 @@ const SettingsMain: FC<OwnProps & StateProps> = ({
             </span>
           )}
         </ListItem>
-        {/* BeHappy: TON menu hidden */}
+        {/* Ansible: TON menu hidden */}
         {isGiveawayAvailable && (
           <ListItem
             icon="gift"

@@ -86,7 +86,7 @@ const Dialogs = ({ dialogs, currentMessageList }: StateProps) => {
     );
   };
 
-  const renderTextDialog = (renderedText: TeactNode, title = 'BeHappy') => {
+  const renderTextDialog = (renderedText: TeactNode, title = 'Ansible') => {
     return (
       <Modal
         isOpen={isModalOpen}
@@ -148,7 +148,7 @@ function getErrorHeader(error: ApiDialogError) {
   }
 
   if (!error.hasErrorKey) {
-    return 'BeHappy';
+    return 'Ansible';
   }
 
   return 'Something went wrong';

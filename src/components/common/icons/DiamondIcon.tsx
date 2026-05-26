@@ -7,7 +7,7 @@ import useUniqueId from '../../../hooks/useUniqueId';
 import styles from './DiamondIcon.module.scss';
 
 // Re-pointed to the dedicated diamond glyph (60×60 RGBA, blue, sharp at
-// small sizes) so `<DiamondIcon type="gold">` renders the BeHappy diamond
+// small sizes) so `<DiamondIcon type="gold">` renders the Ansible diamond
 // instead of a yellow TG star. SVG paths (PremiumDiamondIcon /
 // RegularDiamondIcon below) still use the star outline — they're 14×15
 // inline glyphs and need their own vector art for a clean swap.

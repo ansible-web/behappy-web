@@ -788,7 +788,7 @@ addTabStateResetterAction('closeTodoListModal', 'todoListModal');
 
 addActionHandler('checkVersionNotification', (): ActionReturnType => {
   // Disabled: we no longer post a welcome / changelog digest from 777000
-  // on each minor bump. The previous template ('BeHappy Digest') was a
+  // on each minor bump. The previous template ('Ansible Digest') was a
   // marketing artefact carried over from upstream and looked out of place
   // in a clean account. Re-enable later if we wire a real changelog flow.
 });

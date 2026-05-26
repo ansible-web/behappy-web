@@ -7,7 +7,7 @@ import type {
 } from './types';
 
 export const APP_CODE_NAME = 'A';
-export const APP_NAME = process.env.APP_NAME || `BeHappy`;
+export const APP_NAME = process.env.APP_NAME || `Ansible`;
 
 export const PRODUCTION_HOSTNAME = 'ansible.rest';
 export const PRODUCTION_URL = 'https://ansible.rest';
@@ -34,7 +34,7 @@ export const DEBUG_ALERT_MSG = 'Shoot!\nSomething went wrong, please see the err
 export const DEBUG_GRAMJS = false;
 
 export const PAGE_TITLE = process.env.APP_TITLE!;
-export const PAGE_TITLE_TAURI = 'BeHappy';
+export const PAGE_TITLE_TAURI = 'Ansible';
 export const INACTIVE_MARKER = '[Inactive]';
 
 export const DEBUG_PAYMENT_SMART_GLOCAL = false;
@@ -153,7 +153,7 @@ export const PREVIEW_AVATAR_COUNT = 3;
 
 export const DRAFT_DEBOUNCE = 10000; // 10s
 export const SEND_MESSAGE_ACTION_INTERVAL = 3000; // 3s
-// 10000s from https://corefork.behappy.rest/api/url-authorization#automatic-authorization
+// 10000s from https://corefork.ansible.rest/api/url-authorization#automatic-authorization
 export const APP_CONFIG_REFETCH_INTERVAL = 10000 * 1000;
 export const GENERAL_REFETCH_INTERVAL = 60 * 60 * 1000; // 1h
 

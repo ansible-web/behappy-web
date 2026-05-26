@@ -352,7 +352,7 @@
 "UpdateTelegram" = "Update Ansible";
 "AriaLabelOpenMenu" = "Open menu";
 "AriaLabelBackChatList" = "Return to chat list";
-"SettingsTipsUsername" = "BeHappyTips";
+"SettingsTipsUsername" = "AnsibleTips";
 "SearchFriends" = "Search contacts";
 "Search" = "Search";
 "Contacts" = "Contacts";
@@ -1531,7 +1531,7 @@
 "AriaSettingsEditProfilePhoto" = "Edit profile photo";
 "MenuUIFeaturesSwitch" = "UI Features";
 "MenuTelegramFeatures" = "Ansible Features";
-"TelegramFeaturesUsername" = "BeHappyTips";
+"TelegramFeaturesUsername" = "AnsibleTips";
 "RemoveEffect" = "Remove effect";
 "ReplyInPrivateMessage" = "Reply In Private Message";
 "ProfileOpenAppAbout" = "By launching this mini app, you agree to the {terms}.";
@@ -2149,8 +2149,8 @@
 "ActionGiftCodeSubscriptionText_other" = "You've received a gift from {peer}.\n\nYour gift is a Ansible Premium subscription for {months} months.";
 "ActionGiftCodeSubscriptionDuration" = "You've received a gift from {peer}.\n\nYour gift is a Ansible Premium subscription for {duration}.";
 "ActionGiftCodeSubscriptionDurationYou" = "You sent {peer} a gift code for {duration} of Ansible Premium.";
-"ActionGiftCodeSubscriptionTextYou_one" = "You've sent a gift to {peer}.\n\nBeHappy Premium subscription giftcode for {months} month.";
-"ActionGiftCodeSubscriptionTextYou_other" = "You've sent a gift to {peer}.\n\nBeHappy Premium subscription giftcode for {months} months.";
+"ActionGiftCodeSubscriptionTextYou_one" = "You've sent a gift to {peer}.\n\nAnsible Premium subscription giftcode for {months} month.";
+"ActionGiftCodeSubscriptionTextYou_other" = "You've sent a gift to {peer}.\n\nAnsible Premium subscription giftcode for {months} months.";
 "ActionGiftPremiumTitle_one" = "{months} Month Premium";
 "ActionGiftPremiumTitle_other" = "{months} Months Premium";
 "ActionGiftPremiumDuration" = "{duration} Premium";

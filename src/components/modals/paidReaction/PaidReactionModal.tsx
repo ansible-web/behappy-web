@@ -40,7 +40,7 @@ import DropdownMenu from '../../ui/DropdownMenu';
 import MenuItem from '../../ui/MenuItem';
 import Modal from '../../ui/Modal';
 import Separator from '../../ui/Separator';
-import BalanceBlock from '../stars/BalanceBlock';
+import BalanceBlock from '../diamonds/BalanceBlock';
 import StarSlider from './StarSlider';
 
 import styles from './PaidReactionModal.module.scss';

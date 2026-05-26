@@ -6,7 +6,7 @@ import { FALLBACK_LANG_CODE } from '../../config';
 import readStrings from './readStrings';
 
 const FALLBACK_VERSION = 0;
-const FALLBACK_TRANSLATE_URL = 'https://github.com/behappy-web/behappy-web';
+const FALLBACK_TRANSLATE_URL = 'https://github.com/ansible-web/ansible-web';
 
 export default async function readFallbackStrings(forLocalScript?: boolean): Promise<CachedLangData> {
   let fileData;

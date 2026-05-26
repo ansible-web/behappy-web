@@ -25,7 +25,7 @@ import Button from '../ui/Button';
 import Loading from '../ui/Loading';
 
 import blankUrl from '../../assets/blank.png';
-import behappyLogoUrl from '../../assets/telegram-logo-filled.svg';
+import ansibleLogoUrl from '../../assets/telegram-logo-filled.svg';
 
 type StateProps = {
   auth: GlobalState['auth'];
@@ -183,11 +183,11 @@ const AuthCode = ({
               style={`width: ${QR_SIZE}px; height: ${QR_SIZE}px`}
             />
             <img
-              src={behappyLogoUrl}
+              src={ansibleLogoUrl}
               width={QR_PLANE_SIZE}
               height={QR_PLANE_SIZE}
               className="qr-plane"
-              alt="BeHappy"
+              alt="Ansible"
             />
           </div>
           {!isQrMounted && <div className="qr-loading"><Loading /></div>}

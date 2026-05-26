@@ -30,7 +30,7 @@ let lastTimeout: NodeJS.Timeout | undefined;
 
 export const forceWebsync = (authed: boolean) => {
   if (IS_MOCKED_CLIENT || IS_TAURI) return undefined;
-  // BeHappy: websync (cross-tab login-state propagation via remote <script>)
+  // Ansible: websync (cross-tab login-state propagation via remote <script>)
   // disabled — endpoint /_websync_ нет на ansible.rest (404 spam в console),
   // и cross-tab sync на одном домене уже работает через BroadcastChannel
   // / shared sessions API. Leaving stub чтоб не trigger обратные эффекты

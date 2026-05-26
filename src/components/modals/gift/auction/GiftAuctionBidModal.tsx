@@ -31,7 +31,7 @@ import Modal from '../../../ui/Modal';
 import TextTimer from '../../../ui/TextTimer';
 import Transition from '../../../ui/Transition';
 import StarSlider from '../../paidReaction/StarSlider';
-import BalanceBlock from '../../stars/BalanceBlock';
+import BalanceBlock from '../../diamonds/BalanceBlock';
 
 import styles from './GiftAuctionBidModal.module.scss';
 

@@ -19,7 +19,7 @@
   @include mixins.with-vt-type('profileAvatar');
 
   :global(.VerifiedIcon),
-  :global(.StarIcon) {
+  :global(.DiamondIcon) {
     --color-fill: var(--color-white);
     --color-checkmark: var(--color-primary);
 
@@ -54,7 +54,7 @@
   }
 
   :global(.VerifiedIcon),
-  :global(.StarIcon) {
+  :global(.DiamondIcon) {
     --color-fill: var(--color-primary);
     --color-checkmark: var(--color-white);
 

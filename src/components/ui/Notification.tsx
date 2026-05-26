@@ -22,7 +22,7 @@ import useShowTransitionDeprecated from '../../hooks/useShowTransitionDeprecated
 
 import CustomEmoji from '../common/CustomEmoji';
 import Icon from '../common/icons/Icon';
-import StarIcon from '../common/icons/StarIcon';
+import DiamondIcon from '../common/icons/DiamondIcon';
 import Button from './Button';
 import Portal from './Portal';
 import RoundTimer from './RoundTimer';
@@ -197,7 +197,7 @@ const Notification = ({
     if (shouldUseCustomIcon) {
       if (icon === 'star') {
         return (
-          <StarIcon type="gold" className={buildClassName('notification-icon')} size="adaptive" />
+          <DiamondIcon type="gold" className={buildClassName('notification-icon')} size="adaptive" />
         );
       }
     }

@@ -18,7 +18,7 @@ import useLang from '../../../hooks/useLang';
 import useLastCallback from '../../../hooks/useLastCallback';
 import useOldLang from '../../../hooks/useOldLang';
 
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import Button from '../../ui/Button';
 import Checkbox from '../../ui/Checkbox';
 import ListItem from '../../ui/ListItem';
@@ -376,7 +376,7 @@ const SettingsPrivacy = ({
         <ListItem
           narrow
           allowDisabledClick
-          rightElement={isCurrentUserPremium && <StarIcon size="big" type="premium" />}
+          rightElement={isCurrentUserPremium && <DiamondIcon size="big" type="premium" />}
           className="no-icon"
 
           onClick={() => openSettingsScreen({ screen: SettingsScreens.PrivacyVoiceMessages })}
@@ -390,7 +390,7 @@ const SettingsPrivacy = ({
         </ListItem>
         <ListItem
           narrow
-          rightElement={isCurrentUserPremium && <StarIcon size="big" type="premium" />}
+          rightElement={isCurrentUserPremium && <DiamondIcon size="big" type="premium" />}
           className="no-icon"
 
           onClick={() => openSettingsScreen({ screen: SettingsScreens.PrivacyMessages })}

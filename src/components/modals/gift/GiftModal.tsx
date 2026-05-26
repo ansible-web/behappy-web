@@ -43,10 +43,10 @@ import Modal from '../../ui/Modal';
 import Transition from '../../ui/Transition';
 import GiftComposer from './GiftComposer';
 import GiftItemPremium from './GiftItemPremium';
-import GiftItemStar from './GiftItemStar';
+import GiftItemDiamond from './GiftItemDiamond';
 import GiftModalResaleScreen from './GiftModalResaleScreen';
 import GiftResaleFilters from './GiftResaleFilters';
-import StarGiftCategoryList from './StarGiftCategoryList';
+import DiamondGiftCategoryList from './DiamondGiftCategoryList';
 
 import styles from './GiftModal.module.scss';
 
@@ -346,14 +346,14 @@ const GiftModal: FC<OwnProps & StateProps> = ({
           items={myUniqueGiftIds}
           onLoadMore={handleLoadMore}
           scrollContainerClosest={`.${styles.main}`}
-          itemSelector=".starGiftItem"
+          itemSelector=".diamondGiftItem"
         >
           {myUniqueGiftsById && myUniqueGiftIds?.map((giftId) => {
             const savedGift = myUniqueGiftsById[giftId];
             if (!savedGift) return undefined;
 
             return (
-              <GiftItemStar
+              <GiftItemDiamond
                 key={giftId}
                 gift={savedGift.gift}
                 observeIntersection={observeIntersection}
@@ -389,7 +389,7 @@ const GiftModal: FC<OwnProps & StateProps> = ({
           const shouldDuplicateAsResale = shouldShowResale && !gift.isSoldOut && !areLimitedStarGiftsDisallowed;
 
           const elements = [
-            <GiftItemStar
+            <GiftItemDiamond
               key={giftId}
               gift={gift}
               observeIntersection={observeIntersection}
@@ -400,7 +400,7 @@ const GiftModal: FC<OwnProps & StateProps> = ({
 
           if (shouldDuplicateAsResale) {
             elements.push(
-              <GiftItemStar
+              <GiftItemDiamond
                 key={`resale_${giftId}`}
                 isResale
                 gift={gift}
@@ -514,7 +514,7 @@ const GiftModal: FC<OwnProps & StateProps> = ({
           <>
             {renderStarGiftsHeader()}
             {renderStarGiftsDescription()}
-            <StarGiftCategoryList
+            <DiamondGiftCategoryList
               ref={categoryListRef}
               areUniqueStarGiftsDisallowed={areUniqueStarGiftsDisallowed}
               areLimitedStarGiftsDisallowed={areLimitedStarGiftsDisallowed}

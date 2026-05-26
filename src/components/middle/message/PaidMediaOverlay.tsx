@@ -14,7 +14,7 @@ import useLang from '../../../hooks/useLang';
 import useLastCallback from '../../../hooks/useLastCallback';
 import useOldLang from '../../../hooks/useOldLang';
 
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import Button from '../../ui/Button';
 
 import styles from './PaidMediaOverlay.module.scss';
@@ -44,7 +44,7 @@ const PaidMediaOverlay = ({
     const value = oldLang('UnlockPaidContent', paidMedia.starsAmount);
 
     return replaceWithTeact(
-      value, STARS_ICON_PLACEHOLDER, <StarIcon className={styles.star} type="gold" size="adaptive" />,
+      value, STARS_ICON_PLACEHOLDER, <DiamondIcon className={styles.star} type="gold" size="adaptive" />,
     );
   }, [oldLang, paidMedia]);
 

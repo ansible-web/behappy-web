@@ -28,7 +28,7 @@ import Button from '../../ui/Button';
 import BaseStory from './BaseStory';
 import Photo from './Photo';
 import Video from './Video';
-import WebPageStarGiftAuction from './WebPageStarGiftAuction';
+import WebPageDiamondGiftAuction from './WebPageDiamondGiftAuction';
 import WebPageUniqueGift from './WebPageUniqueGift';
 
 import './WebPage.scss';
@@ -222,7 +222,7 @@ const WebPage = ({
           />
         )}
         {isAuction && webPage.auction && (
-          <WebPageStarGiftAuction
+          <WebPageDiamondGiftAuction
             auction={webPage.auction}
             observeIntersectionForLoading={observeIntersectionForLoading}
             observeIntersectionForPlaying={observeIntersectionForPlaying}

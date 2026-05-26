@@ -6,7 +6,7 @@ import type { ApiPremiumSection } from '../../../api/types';
 import useLastCallback from '../../../hooks/useLastCallback';
 import useOldLang from '../../../hooks/useOldLang';
 
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import ListItem from '../../ui/ListItem';
 
 type OwnProps = {
@@ -21,7 +21,7 @@ function PremiumStatusItem({ premiumSection }: OwnProps) {
   return (
     <div className="settings-item">
       <ListItem
-        leftElement={<StarIcon className="icon ListItem-main-icon" type="premium" size="big" />}
+        leftElement={<DiamondIcon className="icon ListItem-main-icon" type="premium" size="big" />}
         onClick={handleOpenPremiumModal}
       >
         {lang('PrivacyLastSeenPremium')}

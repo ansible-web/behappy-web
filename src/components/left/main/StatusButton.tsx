@@ -14,7 +14,7 @@ import useFlag from '../../../hooks/useFlag';
 
 import CustomEmoji from '../../common/CustomEmoji';
 import GiftEffectWrapper from '../../common/gift/GiftEffectWrapper';
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import CustomEmojiEffect from '../../common/reactions/CustomEmojiEffect';
 import Button from '../../ui/Button';
 import StatusPickerMenu from './StatusPickerMenu.async';
@@ -100,7 +100,7 @@ const StatusButton = ({ emojiStatus, collectibleStatuses, isAccountFrozen }: Sta
               loopLimit={EMOJI_STATUS_LOOP_LIMIT}
             />
           </GiftEffectWrapper>
-        ) : <StarIcon />}
+        ) : <DiamondIcon />}
       </Button>
       <StatusPickerMenu
         statusButtonRef={buttonRef}

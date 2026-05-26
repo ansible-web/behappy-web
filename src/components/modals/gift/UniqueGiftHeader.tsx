@@ -26,7 +26,7 @@ import useLang from '../../../hooks/useLang';
 
 import AnimatedIconFromSticker from '../../common/AnimatedIconFromSticker';
 import Icon from '../../common/icons/Icon';
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import RadialPatternBackground from '../../common/profile/RadialPatternBackground';
 import Transition from '../../ui/Transition';
 import UniqueGiftManageButtons from './UniqueGiftManageButtons';
@@ -152,7 +152,7 @@ const UniqueGiftHeader = ({
         <span className={styles.amount}>
           {formatStarsTransactionAmount(lang, resellPrice)}
           {NNBSP}
-          {resellPrice.currency === 'XTR' && <StarIcon type="gold" size="adaptive" />}
+          {resellPrice.currency === 'XTR' && <DiamondIcon type="gold" size="adaptive" />}
           {resellPrice.currency === 'TON' && <Icon className="in-text-icon" name="toncoin" />}
         </span>
       )}

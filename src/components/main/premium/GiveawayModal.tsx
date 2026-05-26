@@ -40,7 +40,7 @@ import CalendarModal from '../../common/CalendarModal';
 import CountryPickerModal from '../../common/CountryPickerModal.async';
 import GroupChatInfo from '../../common/GroupChatInfo';
 import Icon from '../../common/icons/Icon';
-import StarTopupOptionList from '../../modals/stars/StarTopupOptionList';
+import DiamondTopupOptionList from '../../modals/diamonds/DiamondTopupOptionList';
 import Button from '../../ui/Button';
 import ConfirmDialog from '../../ui/ConfirmDialog';
 import InputText from '../../ui/InputText';
@@ -512,7 +512,7 @@ const GiveawayModal: FC<OwnProps & StateProps> = ({
 
   function renderStarOptionList() {
     return (
-      <StarTopupOptionList
+      <DiamondTopupOptionList
         className={styles.starOptions}
         options={starsGiftOptions}
         selectedStarCount={selectedRandomUserCount}

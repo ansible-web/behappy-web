@@ -89,7 +89,7 @@ import NewContactModal from './NewContactModal.async';
 import PremiumLimitReachedModal from './premium/common/PremiumLimitReachedModal.async';
 import GiveawayModal from './premium/GiveawayModal.async';
 import PremiumMainModal from './premium/PremiumMainModal.async';
-import StarsGiftingPickerModal from './premium/StarsGiftingPickerModal.async';
+import DiamondsGiftingPickerModal from './premium/DiamondsGiftingPickerModal.async';
 import SafeLinkModal from './SafeLinkModal.async';
 import ConfettiContainer from './visualEffects/ConfettiContainer';
 import SnapEffectContainer from './visualEffects/SnapEffectContainer';
@@ -621,7 +621,7 @@ const Main = ({
       <MessageListHistoryHandler />
       <PremiumMainModal isOpen={isPremiumModalOpen} />
       <GiveawayModal isOpen={isGiveawayModalOpen} />
-      <StarsGiftingPickerModal isOpen={isStarsGiftingPickerModal} />
+      <DiamondsGiftingPickerModal isOpen={isStarsGiftingPickerModal} />
       <PremiumLimitReachedModal limit={limitReached} />
       <PaymentModal isOpen={isPaymentModalOpen} onClose={closePaymentModal} />
       <ReceiptModal isOpen={isReceiptModalOpen} onClose={clearReceipt} />

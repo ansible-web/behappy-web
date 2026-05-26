@@ -28,7 +28,7 @@ import Link from '../../../ui/Link';
 import MenuItem from '../../../ui/MenuItem';
 import TextTimer from '../../../ui/TextTimer';
 import TableInfoModal, { type TableData } from '../../common/TableInfoModal';
-import GiftItemStar from '../GiftItemStar';
+import GiftItemDiamond from '../GiftItemDiamond';
 import UniqueGiftHeader from '../UniqueGiftHeader';
 
 import styles from './GiftAuctionModal.module.scss';
@@ -185,7 +185,7 @@ const GiftAuctionModal = ({ modal, auctionState }: OwnProps & StateProps) => {
 
     return (
       <div className={styles.header}>
-        <GiftItemStar gift={gift} hideBadge noClickable />
+        <GiftItemDiamond gift={gift} hideBadge noClickable />
         <h1 className={styles.title}>
           {giftTitle}
         </h1>

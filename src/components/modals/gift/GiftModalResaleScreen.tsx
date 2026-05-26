@@ -21,7 +21,7 @@ import useLastCallback from '../../../hooks/useLastCallback';
 
 import InfiniteScroll from '../../ui/InfiniteScroll';
 import Transition from '../../ui/Transition';
-import GiftItemStar from './GiftItemStar';
+import GiftItemDiamond from './GiftItemDiamond';
 import ResaleGiftsNotFound from './ResaleGiftsNotFound';
 
 import styles from './GiftModal.module.scss';
@@ -111,13 +111,13 @@ const GiftModalResaleScreen: FC<OwnProps & StateProps> = ({
           className={buildClassName(styles.resaleStarGiftsContainer)}
           items={viewportIds}
           onLoadMore={onLoadMore}
-          itemSelector=".starGiftItem"
+          itemSelector=".diamondGiftItem"
           noFastList
           preloadBackwards={RESALE_GIFTS_LIMIT}
           scrollContainerClosest={`.${styles.resaleScreenRoot}`}
         >
           {resellGifts?.map((g) => (
-            <GiftItemStar
+            <GiftItemDiamond
               key={g.id}
               gift={g}
               observeIntersection={observe}

@@ -19,7 +19,7 @@ import useLastCallback from '../../../hooks/useLastCallback';
 import useShowTransition from '../../../hooks/useShowTransition';
 
 import AnimatedIcon from '../AnimatedIcon';
-import StarIcon from '../icons/StarIcon';
+import DiamondIcon from '../icons/DiamondIcon';
 
 import styles from './ReactionAnimatedEmoji.module.scss';
 
@@ -113,7 +113,7 @@ const PaidReactionEmoji = ({
 
   return (
     <div className={rootClassName} ref={ref} teactFastList>
-      <StarIcon key="icon" type="gold" size="adaptive" style={`width: ${size}px; height: ${size}px`} />
+      <DiamondIcon key="icon" type="gold" size="adaptive" style={`width: ${size}px; height: ${size}px`} />
       {shouldRenderEffect && effectsIds.map((id) => (
         <AnimatedIcon
           key={id}

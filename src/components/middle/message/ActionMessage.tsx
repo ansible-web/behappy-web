@@ -62,9 +62,9 @@ import ChannelPhoto from './actions/ChannelPhoto';
 import Gift from './actions/Gift';
 import GiveawayPrize from './actions/GiveawayPrize';
 import NoForwardsRequest from './actions/NoForwardsRequest';
-import StarGift from './actions/StarGift';
-import StarGiftPurchaseOffer from './actions/StarGiftPurchaseOffer';
-import StarGiftUnique from './actions/StarGiftUnique';
+import DiamondGift from './actions/DiamondGift';
+import DiamondGiftPurchaseOffer from './actions/DiamondGiftPurchaseOffer';
+import DiamondGiftUnique from './actions/DiamondGiftUnique';
 import SuggestedPhoto from './actions/SuggestedPhoto';
 import SuggestedPostApproval from './actions/SuggestedPostApproval';
 import SuggestedPostBalanceTooLow from './actions/SuggestedPostBalanceTooLow';
@@ -535,7 +535,7 @@ const ActionMessage = ({
 
       case 'starGift':
         return (
-          <StarGift
+          <DiamondGift
             action={action}
             message={message}
             observeIntersectionForLoading={observeIntersectionForLoading}
@@ -546,7 +546,7 @@ const ActionMessage = ({
 
       case 'starGiftUnique':
         return (
-          <StarGiftUnique
+          <DiamondGiftUnique
             action={action}
             message={message}
             observeIntersectionForLoading={observeIntersectionForLoading}
@@ -557,7 +557,7 @@ const ActionMessage = ({
 
       case 'starGiftPurchaseOffer':
         return (
-          <StarGiftPurchaseOffer
+          <DiamondGiftPurchaseOffer
             action={action}
             message={message}
             hasButtons={shouldRenderGiftOfferButtons}

@@ -23,7 +23,7 @@ import AnimatedCounter from '../../../common/AnimatedCounter';
 import AnimatedIconFromSticker from '../../../common/AnimatedIconFromSticker';
 import Avatar from '../../../common/Avatar';
 import FullNameTitle from '../../../common/FullNameTitle';
-import StarIcon from '../../../common/icons/StarIcon';
+import DiamondIcon from '../../../common/icons/DiamondIcon';
 import Button from '../../../ui/Button';
 import ConfirmDialog from '../../../ui/ConfirmDialog';
 import InputText from '../../../ui/InputText';
@@ -377,7 +377,7 @@ const GiftAuctionBidModal = ({
       >
         <p>{lang('GiftAuctionCustomBidDescription', { count: renderingAuctionState?.gift.giftsPerRound })}</p>
         <div className={styles.customBidInput}>
-          <StarIcon type="gold" size="adaptive" className={styles.customBidInputIcon} />
+          <DiamondIcon type="gold" size="adaptive" className={styles.customBidInputIcon} />
           <InputText
             value={customBidValue}
             onChange={handleCustomBidChange}

@@ -174,7 +174,7 @@ import EmbeddedMessage from '../../common/embedded/EmbeddedMessage';
 import EmbeddedStory from '../../common/embedded/EmbeddedStory';
 import FakeIcon from '../../common/FakeIcon';
 import Icon from '../../common/icons/Icon';
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import MessageText from '../../common/MessageText';
 import PeerColorWrapper from '../../common/PeerColorWrapper';
 import RankBadge from '../../common/RankBadge';
@@ -1780,7 +1780,7 @@ const Message = ({
                   observeIntersectionForPlaying={observeIntersectionForPlaying}
                 />
               )}
-              {!asForwarded && !senderEmojiStatus && senderIsPremium && <StarIcon />}
+              {!asForwarded && !senderEmojiStatus && senderIsPremium && <DiamondIcon />}
               {senderPeer?.fakeType && <FakeIcon fakeType={senderPeer.fakeType} />}
             </span>
           </span>

@@ -6,7 +6,7 @@ import { convertTonFromNanos } from '../../util/formatCurrency';
 import buildClassName from '../buildClassName';
 
 import Icon from '../../components/common/icons/Icon';
-import StarIcon from '../../components/common/icons/StarIcon';
+import DiamondIcon from '../../components/common/icons/DiamondIcon';
 
 export const NEXT_ARROW_REPLACEMENT = {
   '>': <Icon name="next-link" className="link-arrow-icon" />,
@@ -67,7 +67,7 @@ export function formatStarsAsIcon(lang: LangFn, amount: number | string, options
   const { asFont, className, containerClassName, withWrapper } = options || {};
   const icon = asFont
     ? <Icon name="star" className={buildClassName('in-text-icon', className)} />
-    : <StarIcon type="gold" className={className} size="adaptive" />;
+    : <DiamondIcon type="gold" className={className} size="adaptive" />;
 
   if (containerClassName || withWrapper) {
     return (

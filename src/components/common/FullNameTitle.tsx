@@ -30,7 +30,7 @@ import Transition from '../ui/Transition';
 import CustomEmoji from './CustomEmoji';
 import FakeIcon from './FakeIcon';
 import GiftEffectWrapper from './gift/GiftEffectWrapper';
-import StarIcon from './icons/StarIcon';
+import DiamondIcon from './icons/DiamondIcon';
 import VerifiedIcon from './VerifiedIcon';
 
 import styles from './FullNameTitle.module.scss';
@@ -178,7 +178,7 @@ const FullNameTitle = ({
               </GiftEffectWrapper>
             </Transition>
           )}
-          {canShowEmojiStatus && !emojiStatus && isPremium && <StarIcon />}
+          {canShowEmojiStatus && !emojiStatus && isPremium && <DiamondIcon />}
           {isMonoforum && (
             <div className={buildClassName(styles.monoforumBadge, monoforumBadgeClassName)}>
               {lang('MonoforumBadge')}

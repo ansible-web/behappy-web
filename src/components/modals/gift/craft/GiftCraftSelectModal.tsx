@@ -27,7 +27,7 @@ import InfiniteScroll from '../../../ui/InfiniteScroll';
 import Loading from '../../../ui/Loading';
 import Modal from '../../../ui/Modal';
 import Transition from '../../../ui/Transition';
-import GiftItemStar from '../GiftItemStar';
+import GiftItemDiamond from '../GiftItemDiamond';
 import GiftResaleFilters from '../GiftResaleFilters';
 import ResaleGiftsNotFound from '../ResaleGiftsNotFound';
 
@@ -59,7 +59,7 @@ type CraftGiftItemProps = {
 const CraftGiftItem = memo(({ gift, chancePercent, chanceColor, showPrice, observe, onClick }: CraftGiftItemProps) => {
   return (
     <div className={styles.giftWrapper}>
-      <GiftItemStar
+      <GiftItemDiamond
         gift={gift}
         observeIntersection={observe}
         hideBadge={!showPrice}
@@ -299,7 +299,7 @@ const GiftCraftSelectModal = ({ modal, craftModal }: OwnProps & StateProps) => {
           items={viewportIds}
           onLoadMore={getMore}
           onScroll={handleScroll}
-          itemSelector=".starGiftItem"
+          itemSelector=".diamondGiftItem"
           noFastList
           noScrollRestore={isMarketJustUpdated}
           preloadBackwards={CRAFT_GIFTS_LIMIT}

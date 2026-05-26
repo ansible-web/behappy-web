@@ -122,7 +122,7 @@ import Spinner from '../ui/Spinner';
 import SquareTabList, { type TabWithProperties } from '../ui/SquareTabList';
 import Transition from '../ui/Transition';
 import DeleteMemberModal from './DeleteMemberModal';
-import StarGiftCollectionList from './gifts/StarGiftCollectionList';
+import DiamondGiftCollectionList from './gifts/DiamondGiftCollectionList';
 import StoryAlbumList from './stories/StoryAlbumList';
 
 import './Profile.scss';
@@ -825,7 +825,7 @@ const Profile = ({
             isGiftCollectionsShowed && 'noTransition',
           )}
         >
-          <StarGiftCollectionList peerId={chatId} />
+          <DiamondGiftCollectionList peerId={chatId} />
         </div>
       );
     }

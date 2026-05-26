@@ -9,7 +9,7 @@ import renderText from '../../common/helpers/renderText';
 import useLastCallback from '../../../hooks/useLastCallback';
 import useOldLang from '../../../hooks/useOldLang';
 
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import Checkbox from '../../ui/Checkbox';
 import ListItem from '../../ui/ListItem';
 
@@ -55,7 +55,7 @@ const SettingsPrivacyLastSeen = ({
       )}
       <div className="settings-item">
         <ListItem
-          leftElement={<StarIcon className="icon ListItem-main-icon" type="premium" size="big" />}
+          leftElement={<DiamondIcon className="icon ListItem-main-icon" type="premium" size="big" />}
           onClick={handleOpenPremiumModal}
         >
           {isCurrentUserPremium ? lang('PrivacyLastSeenPremiumForPremium') : lang('PrivacyLastSeenPremium')}

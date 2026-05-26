@@ -22,7 +22,7 @@ import DeleteAccountModal from './deleteAccount/DeleteAccountModal.async';
 import DisableSharingAboutModal from './disableSharing/DisableSharingAboutModal.async';
 import EmojiStatusAccessModal from './emojiStatusAccess/EmojiStatusAccessModal.async';
 import FrozenAccountModal from './frozenAccount/FrozenAccountModal.async';
-import AboutStarGiftModal from './gift/AboutStarGiftModal.async';
+import AboutDiamondGiftModal from './gift/AboutDiamondGiftModal.async';
 import ActiveGiftAuctionsModal from './gift/auction/ActiveGiftAuctionsModal.async';
 import GiftAuctionAcquiredModal from './gift/auction/GiftAuctionAcquiredModal.async';
 import GiftAuctionBidModal from './gift/auction/GiftAuctionBidModal.async';
@@ -40,7 +40,7 @@ import GiftOfferAcceptModal from './gift/offer/GiftOfferAcceptModal.async';
 import GiftPreviewModal from './gift/preview/GiftPreviewModal.async';
 import GiftRecipientPicker from './gift/recipient/GiftRecipientPicker.async';
 import GiftResalePriceComposerModal from './gift/resale/GiftResalePriceComposerModal.async';
-import StarGiftPriceDecreaseInfoModal from './gift/StarGiftPriceDecreaseInfoModal.async';
+import DiamondGiftPriceDecreaseInfoModal from './gift/DiamondGiftPriceDecreaseInfoModal.async';
 import GiftStatusInfoModal from './gift/status/GiftStatusInfoModal.async';
 import GiftTransferConfirmModal from './gift/transfer/GiftTransferConfirmModal.async';
 import GiftTransferModal from './gift/transfer/GiftTransferModal.async';
@@ -65,12 +65,12 @@ import RankModal from './rank/RankModal.async';
 import ReportAdModal from './reportAd/ReportAdModal.async';
 import ReportModal from './reportModal/ReportModal.async';
 import SharePreparedMessageModal from './sharePreparedMessage/SharePreparedMessageModal.async';
-import ChatRefundModal from './stars/chatRefund/ChatRefundModal.async';
-import StarsGiftModal from './stars/gift/StarsGiftModal.async';
-import StarsBalanceModal from './stars/StarsBalanceModal.async';
-import StarsPaymentModal from './stars/StarsPaymentModal.async';
-import StarsSubscriptionModal from './stars/subscription/StarsSubscriptionModal.async';
-import StarsTransactionInfoModal from './stars/transaction/StarsTransactionModal.async';
+import ChatRefundModal from './diamonds/chatRefund/ChatRefundModal.async';
+import DiamondsGiftModal from './diamonds/gift/DiamondsGiftModal.async';
+import DiamondsBalanceModal from './diamonds/DiamondsBalanceModal.async';
+import DiamondsPaymentModal from './diamonds/DiamondsPaymentModal.async';
+import DiamondsSubscriptionModal from './diamonds/subscription/DiamondsSubscriptionModal.async';
+import DiamondsTransactionInfoModal from './diamonds/transaction/DiamondsTransactionModal.async';
 import StealthModeModal from './storyStealthMode/StealthModeModal.async';
 import SuggestedPostApprovalModal from './suggestedPostApproval/SuggestedPostApprovalModal.async';
 import SuggestedStatusModal from './suggestedStatus/SuggestedStatusModal.async';
@@ -181,15 +181,15 @@ const MODALS: ModalRegistry = {
   webApps: WebAppModal,
   collectibleInfoModal: CollectibleInfoModal,
   mapModal: MapModal,
-  starsPayment: StarsPaymentModal,
-  starsBalanceModal: StarsBalanceModal,
-  starsTransactionModal: StarsTransactionInfoModal,
+  starsPayment: DiamondsPaymentModal,
+  starsBalanceModal: DiamondsBalanceModal,
+  starsTransactionModal: DiamondsTransactionInfoModal,
   chatInviteModal: ChatInviteModal,
   paidReactionModal: PaidReactionModal,
   suggestMessageModal: SuggestMessageModal,
   suggestedPostApprovalModal: SuggestedPostApprovalModal,
-  starsSubscriptionModal: StarsSubscriptionModal,
-  starsGiftModal: StarsGiftModal,
+  starsSubscriptionModal: DiamondsSubscriptionModal,
+  starsGiftModal: DiamondsGiftModal,
   giftModal: PremiumGiftModal,
   isGiftRecipientPickerOpen: GiftRecipientPicker,
   isWebAppsCloseConfirmationModalOpen: WebAppsCloseConfirmationModal,
@@ -212,8 +212,8 @@ const MODALS: ModalRegistry = {
   giftAuctionChangeRecipientModal: GiftAuctionChangeRecipientModal,
   giftAuctionAcquiredModal: GiftAuctionAcquiredModal,
   activeGiftAuctionsModal: ActiveGiftAuctionsModal,
-  starGiftPriceDecreaseInfoModal: StarGiftPriceDecreaseInfoModal,
-  aboutStarGiftModal: AboutStarGiftModal,
+  starGiftPriceDecreaseInfoModal: DiamondGiftPriceDecreaseInfoModal,
+  aboutStarGiftModal: AboutDiamondGiftModal,
   monetizationVerificationModal: VerificationMonetizationModal,
   giftWithdrawModal: GiftWithdrawModal,
   giftStatusInfoModal: GiftStatusInfoModal,

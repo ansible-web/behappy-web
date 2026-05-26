@@ -19,7 +19,7 @@ import useLang from '../../../hooks/useLang';
 import useLastCallback from '../../../hooks/useLastCallback';
 
 import Icon from '../../common/icons/Icon';
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import ChatExtra from '../../common/profile/ChatExtra';
 import ProfileInfo from '../../common/profile/ProfileInfo';
 import ConfirmDialog from '../../ui/ConfirmDialog';
@@ -175,7 +175,7 @@ const SettingsMain: FC<OwnProps & StateProps> = ({
       <div className="settings-main-menu">
         {canBuyPremium && (
           <ListItem
-            leftElement={<StarIcon className="icon ListItem-main-icon" type="premium" size="big" />}
+            leftElement={<DiamondIcon className="icon ListItem-main-icon" type="premium" size="big" />}
             narrow
 
             onClick={() => openPremiumModal()}
@@ -184,7 +184,7 @@ const SettingsMain: FC<OwnProps & StateProps> = ({
           </ListItem>
         )}
         <ListItem
-          leftElement={<StarIcon className="icon ListItem-main-icon" type="gold" size="big" />}
+          leftElement={<DiamondIcon className="icon ListItem-main-icon" type="gold" size="big" />}
           narrow
 
           onClick={() => openStarsBalanceModal({})}

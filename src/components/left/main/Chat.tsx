@@ -71,7 +71,7 @@ import Avatar from '../../common/Avatar';
 import DeleteChatModal from '../../common/DeleteChatModal';
 import FullNameTitle from '../../common/FullNameTitle';
 import Icon from '../../common/icons/Icon';
-import StarIcon from '../../common/icons/StarIcon';
+import DiamondIcon from '../../common/icons/DiamondIcon';
 import LastMessageMeta from '../../common/LastMessageMeta';
 import ListItem from '../../ui/ListItem';
 import ChatFolderModal from '../ChatFolderModal.async';
@@ -439,7 +439,7 @@ const Chat: FC<OwnProps & StateProps> = ({
               className={buildClassName('avatar-online', 'avatar-badge', isAvatarOnlineShown && 'avatar-online-shown')}
             />
             {!isAvatarOnlineShown && Boolean(chat.subscriptionUntil) && (
-              <StarIcon type="gold" className="avatar-badge avatar-subscription" size="adaptive" />
+              <DiamondIcon type="gold" className="avatar-badge avatar-subscription" size="adaptive" />
             )}
           </div>
           <ChatBadge

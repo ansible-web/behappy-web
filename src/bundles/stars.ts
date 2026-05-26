@@ -1,10 +1,10 @@
 /* eslint-disable @stylistic/max-len */
-export { default as StarsGiftModal } from '../components/modals/stars/gift/StarsGiftModal';
-export { default as StarsGiftingPickerModal } from '../components/main/premium/StarsGiftingPickerModal';
-export { default as StarsBalanceModal } from '../components/modals/stars/StarsBalanceModal';
-export { default as StarPaymentModal } from '../components/modals/stars/StarsPaymentModal';
-export { default as StarsTransactionInfoModal } from '../components/modals/stars/transaction/StarsTransactionModal';
-export { default as StarsSubscriptionModal } from '../components/modals/stars/subscription/StarsSubscriptionModal';
+export { default as DiamondsGiftModal } from '../components/modals/diamonds/gift/DiamondsGiftModal';
+export { default as DiamondsGiftingPickerModal } from '../components/main/premium/DiamondsGiftingPickerModal';
+export { default as DiamondsBalanceModal } from '../components/modals/diamonds/DiamondsBalanceModal';
+export { default as DiamondPaymentModal } from '../components/modals/diamonds/DiamondsPaymentModal';
+export { default as DiamondsTransactionInfoModal } from '../components/modals/diamonds/transaction/DiamondsTransactionModal';
+export { default as DiamondsSubscriptionModal } from '../components/modals/diamonds/subscription/DiamondsSubscriptionModal';
 export { default as PaidReactionModal } from '../components/modals/paidReaction/PaidReactionModal';
 export { default as GiftModal } from '../components/modals/gift/GiftModal';
 export { default as GiftRecipientPicker } from '../components/modals/gift/recipient/GiftRecipientPicker';
@@ -22,14 +22,14 @@ export { default as GiftAuctionBidModal } from '../components/modals/gift/auctio
 export { default as GiftAuctionInfoModal } from '../components/modals/gift/auction/GiftAuctionInfoModal';
 export { default as GiftAuctionAcquiredModal } from '../components/modals/gift/auction/GiftAuctionAcquiredModal';
 export { default as GiftAuctionChangeRecipientModal } from '../components/modals/gift/auction/GiftAuctionChangeRecipientModal';
-export { default as StarGiftPriceDecreaseInfoModal } from '../components/modals/gift/StarGiftPriceDecreaseInfoModal';
-export { default as AboutStarGiftModal } from '../components/modals/gift/AboutStarGiftModal';
+export { default as DiamondGiftPriceDecreaseInfoModal } from '../components/modals/gift/DiamondGiftPriceDecreaseInfoModal';
+export { default as AboutDiamondGiftModal } from '../components/modals/gift/AboutDiamondGiftModal';
 export { default as GiftStatusInfoModal } from '../components/modals/gift/status/GiftStatusInfoModal';
 export { default as GiftWithdrawModal } from '../components/modals/gift/withdraw/GiftWithdrawModal';
 export { default as GiftTransferModal } from '../components/modals/gift/transfer/GiftTransferModal';
 export { default as GiftTransferConfirmModal } from '../components/modals/gift/transfer/GiftTransferConfirmModal';
 export { default as GiftDescriptionRemoveModal } from '../components/modals/gift/message/GiftDescriptionRemoveModal';
 export { default as GiftOfferAcceptModal } from '../components/modals/gift/offer/GiftOfferAcceptModal';
-export { default as ChatRefundModal } from '../components/modals/stars/chatRefund/ChatRefundModal';
+export { default as ChatRefundModal } from '../components/modals/diamonds/chatRefund/ChatRefundModal';
 export { default as PriceConfirmModal } from '../components/modals/priceConfirm/PriceConfirmModal';
 export { default as ActiveGiftAuctionsModal } from '../components/modals/gift/auction/ActiveGiftAuctionsModal';

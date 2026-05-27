@@ -33,7 +33,7 @@ type StateProps = {
   language?: string;
 };
 
-const DATA_PREFIX = 'bh://login?token=';
+const DATA_PREFIX = 'as://login?token=';
 const QR_SIZE = 220;
 const QR_PLANE_SIZE = 44;
 const QR_CODE_MUTATION_DURATION = 50; // The library is asynchronous and we need to wait for its mutation code

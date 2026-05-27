@@ -201,8 +201,8 @@ function parseDeepLink(url: string) {
     const urlParsed = new URL(correctUrl);
     return parseHttpLink(urlParsed);
   }
-  if (correctUrl.startsWith('tg:')) {
-    const urlToParse = IS_BAD_URL_PARSER ? correctUrl.replace(/^tg:\/\//, 'https://') : correctUrl;
+  if (correctUrl.startsWith('as:')) {
+    const urlToParse = IS_BAD_URL_PARSER ? correctUrl.replace(/^as:\/\//, 'https://') : correctUrl;
     const urlParsed = new URL(urlToParse);
     return parseTgLink(urlParsed);
   }

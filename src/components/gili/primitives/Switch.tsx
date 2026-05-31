@@ -54,6 +54,7 @@ const Switch = ({
       checked={checked}
       disabled={isDisabled}
       className={buildClassName(
+        'Switch',
         styles.root,
         withPermissionColors && styles.permissionColors,
         control?.inputClassName,

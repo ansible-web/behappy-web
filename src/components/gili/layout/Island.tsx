@@ -70,6 +70,7 @@ const IslandText = ({ className, children, ...otherProps }: OwnProps) => {
 
 export default Island;
 export {
+  IslandTitle,
   IslandOutside,
   IslandDescription,
   IslandText,

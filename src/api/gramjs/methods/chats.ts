@@ -86,7 +86,7 @@ import {
   buildApiError, checkErrorType, isChatFolder, wrapError,
 } from '../helpers/misc';
 import { scheduleMutedChatUpdate } from '../scheduleUnmute';
-import { sendApiUpdate } from '../updates/apiUpdateEmitter';
+import { sendApiUpdate, sendImmediateApiUpdate } from '../updates/apiUpdateEmitter';
 import {
   applyState, updateChannelState,
 } from '../updates/updateManager';
@@ -478,7 +478,10 @@ export async function fetchChat({
     return undefined;
   }
 
-  sendApiUpdate({
+  // Use an immediate (non-throttled) update so the synthesized chat is committed to global
+  // state before this method's promise resolves. `openChat` relies on the chat being present
+  // right after `fetchChat` resolves to trigger the initial history load for non-dialog DMs.
+  sendImmediateApiUpdate({
     '@type': 'updateChat',
     id: chat.id,
     chat,

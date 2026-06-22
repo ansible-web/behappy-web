@@ -248,13 +248,22 @@ addActionHandler('openChat', (global, actions, payload): ActionReturnType => {
   const isChatOnlySummary = !threadInfo || !selectChatLastMessageId(global, id);
 
   if (!chat) {
-    if (selectIsChatWithSelf(global, id)) {
-      void callApi('fetchChat', { type: 'self' });
-    } else {
-      const user = selectUser(global, id);
-      if (user) {
-        void callApi('fetchChat', { type: 'user', user });
-      }
+    const isWithSelf = selectIsChatWithSelf(global, id);
+    const user = isWithSelf ? undefined : selectUser(global, id);
+    const fetchChatPromise = isWithSelf
+      ? callApi('fetchChat', { type: 'self' })
+      : (user ? callApi('fetchChat', { type: 'user', user }) : undefined);
+
+    // A non-dialog DM (opened from search/username) has no `ApiChat` until `fetchChat`
+    // synthesizes one. The in-session history load is otherwise only triggered by MessageList's
+    // mount-time `isChatLoaded` effect, which misses the late async chat commit → eternal spinner.
+    // Once the chat is committed (fetchChat uses an immediate update), dispatch the load explicitly.
+    if (fetchChatPromise) {
+      void fetchChatPromise.then((result) => {
+        if (!result) return;
+        if (selectCurrentMessageList(getGlobal(), tabId)?.chatId !== id) return;
+        actions.loadViewportMessages({ chatId: id, threadId: MAIN_THREAD_ID, tabId });
+      });
     }
   } else if (isChatOnlySummary && !chat.isMin) {
     actions.requestChatUpdate({ chatId: id });

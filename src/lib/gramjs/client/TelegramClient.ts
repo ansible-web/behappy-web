@@ -90,8 +90,11 @@ type EventBuilder = {
   build: (update: Update) => Update;
 };
 
-const DEFAULT_DC_ID = 2;
-const DEFAULT_WEBDOCUMENT_DC_ID = 4;
+// Ansible/MVSy — single datacenter (DC 1). Default straight to DC 1 so the web
+// boots on dws1 directly: no DC2→DC1 migration, no duplicate session on a second
+// connection (which the backend closes → WS 1006 → first-open spinner).
+const DEFAULT_DC_ID = 1;
+const DEFAULT_WEBDOCUMENT_DC_ID = 1;
 const EXPORTED_SENDER_RECONNECT_TIMEOUT = 1000; // 1 sec
 const EXPORTED_SENDER_RELEASE_TIMEOUT = 30000; // 30 sec
 const WEBDOCUMENT_REQUEST_PART_SIZE = 131072; // 128kb
